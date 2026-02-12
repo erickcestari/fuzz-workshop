@@ -12,3 +12,6 @@ no_coverage_log:
 
 dictionary:
   ./fuzz_coverage -runs=3000000
+
+arbitrary:
+  cd arbitrary-fuzz-target && cargo hfuzz run arbitrary-fuzz-target

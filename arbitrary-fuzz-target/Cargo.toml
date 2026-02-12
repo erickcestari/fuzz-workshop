@@ -1,0 +1,9 @@
+[package]
+name = "arbitrary-fuzz-target"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arbitrary = { version = "1.4.2", features = ["derive"] }
+honggfuzz = { version = "0.5.58", features = ["arbitrary"] }
+
