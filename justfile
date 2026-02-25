@@ -15,3 +15,6 @@ dictionary:
 
 arbitrary:
   cd arbitrary-fuzz-target && cargo hfuzz run arbitrary-fuzz-target
+
+differential_fuzzing:
+  cd fuzzing-examples && cargo fuzz run differential_fuzzing

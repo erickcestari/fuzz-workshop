@@ -1,0 +1,21 @@
+[package]
+name = "fuzzing-test-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.fuzzing-test]
+path = ".."
+
+[[bin]]
+name = "differential_fuzzing"
+path = "fuzz_targets/differential_fuzzing.rs"
+test = false
+doc = false
+bench = false
